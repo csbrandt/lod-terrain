@@ -1,0 +1,22 @@
+{
+  "name": "lod-terrain",
+  "version": "0.0.0",
+  "description": "LOD Terrain ===========",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csbrandt/lod-terrain.git"
+  },
+  "author": "csbrandt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csbrandt/lod-terrain/issues"
+  },
+  "homepage": "https://github.com/csbrandt/lod-terrain",
+  "dependencies": {
+    "three": "~0.66.2"
+  },
+  "devDependencies": {
+    "brfs": "~1.1.1"
+  }
+}
