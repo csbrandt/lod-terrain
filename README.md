@@ -24,7 +24,7 @@ Constructor
 
 Browser Bundle
 ---------------
-   $ npm run build
+    $ npm run build
 
 Credits
 --------
