@@ -23,7 +23,6 @@ THE SOFTWARE.
 */
 
 
-var Terrain = exports;
 var THREE = require('three');
 var material = require('./material');
 // Tiles that sit next to a tile of a greater scale need to have their edges morphed to avoid
@@ -38,7 +37,7 @@ var Edge = {
 };
 
 // Terrain is an extension of Object3D and thus can be added directly to the stage
-var Terrain = function(heightData, worldWidth, levels, resolution)
+function Terrain(heightData, worldWidth, levels, resolution)
 {
    THREE.Object3D.call(this);
 
@@ -106,7 +105,7 @@ var Terrain = function(heightData, worldWidth, levels, resolution)
       this.createTile(scale, scale, scale, Edge.TOP | Edge.RIGHT);
    }
    /*jslint bitwise: false */
-};
+}
 
 Terrain.prototype = Object.create(THREE.Object3D.prototype);
 
@@ -121,3 +120,5 @@ Terrain.prototype.createTile = function(x, y, scale, edgeMorph)
    var plane = new THREE.Mesh(this.tileGeometry, terrainMaterial);
    this.add(plane);
 };
+
+module.exports = Terrain;

@@ -1,0 +1,56 @@
+/* base styles */
+
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+html, body, #container {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+
+#share-container {
+  position: absolute;
+  top: 0;
+  background: #000;
+  opacity: 0.8;
+  color: #fff;
+  padding: 10px;
+  padding-left: 20px;
+  height: 120px;
+  width: 100%;
+}
+
+#share-container h1 {
+  float: left;
+  margin: 0 auto;
+  padding-right: 30px;
+}
+
+#share-container p {
+  padding-top: 6px;
+  font-size: 12px;
+}
+
+#threejs-container {
+  background: #000;
+  color: #666;
+  height: 100%;
+  width: 100%;
+}
+
+#threejs-container canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
